@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+    --color-primary:#37C4C5;
+    --color-footer:#24313B;
+    --text-dark:#515151;
+    --text-light:white;
+    --btn-color-primary:#37C4C5;
+    --btn-color-secondary:#F52157;
+}
+html{
+    height: 100%;
+    width: 100%
+}
+body{
+    min-width: 320px;
+    font-family: Roboto;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+/* -------------------------------------formatting-------- */
+
+h1,h2,h3{
+    font-family: Rokkit;
+}
+p{
+    line-height: 3rem;
+}
+small{
+    font-weight: lighter;
+}
+
+
+/* -------------------------------------sections-------- */
+
+
+header{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg_header.jpg");
+    background-repeat: no-repeat;    
+}
+.navbar-brand img{
+    display: block;
+    width: 150px;
+}
+
+
+.jumbotron{
+    color: var(--text-light);
+    height: 100vh;
+}
+
+
+#home{
+
+    height: 200px;
+    background-color: red;
+}
+
+/* -------------------------------------buttons-------- */
