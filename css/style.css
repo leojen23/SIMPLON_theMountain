@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Rokkitt:100,200,300,400,500,700&display=swap');
 
 :root{
-    --color-primary:#37C4C5;
+    --color-primary:#9DDBF0;
     --color-footer:#24313B;
     --text-dark:#515151;
     --text-light:#FFFFFF;
@@ -23,24 +23,42 @@ body{
     list-style: none;
     overflow: auto;
     color: var(--text-dark);
+    box-sizing: border-box;
     
 }
 /* -------------------------------------formatting-------- */
-
-h1,h2,h3{
+h1,h2,h3,h4,h5{
     font-family: rokkitt;
-    font-weight: 300;
+}
+
+h1{
+    font-weight: 400;
+    padding: 1rem 1.1rem;
+    
+}
+h2{
+    font-weight: 400;
+    padding: 1rem 1.1rem;
+    
+}
+
+h3{
+
 }
 p{
     line-height: 2rem;
     font-weight: 300;
+    font-size: 1rem;
 }
 small{
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 2.6rem;
 }
 .navbar-nav, .jumbotron-fluid,.container-fluid{
-    padding: 2rem;
+    padding: 0 1rem;
+ 
 }
+
 
 
 /* -------------------------------------sections-------- */
@@ -53,8 +71,6 @@ header{
     background-position: top bottom;
     background-size: cover;    
 }
-
-
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -96,25 +112,38 @@ header{
 .jumbotron-fluid{
     color: var(--text-light);
     
+
+}
+.jumbotron-fluid h1{
+    
+    font-size:3.9rem;
+    line-height: 0.9;
+    font-weight: 500;
+    
+   
 }
 .jumbotron-fluid p{
     font-family: roboto;
     color: var(--text-light);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: lighter;
-    opacity: 0.7;
-    padding: 2rem;
-    
+    opacity: 0.9;
+    padding: 4rem 4rem 0 4rem ;
+    line-height: 3rem;
+    margin: 0.5rem;
 }
 
 
 /* FEATURES SECTION */
 #features{
     height:100%;
+    padding-top:5rem;
+    padding-bottom:2rem
 }
 .card{
     border: none;
-    padding-top:3rem;
+    padding-bottom:3rem;
+    
 }
 .card-body{
 padding: 0;
@@ -126,20 +155,24 @@ padding: 0;
 /* ABOUT SECTION */
 
 #about{
-    height: 500px;
+    height: 1000px;
+    color: var(--text-light);
     background-image: url("../images/bg_nuage.jpg");
     background-repeat: no-repeat; 
-    background-position: right;
-    background-size: cover;   
+    background-position: 50% 50%;
+    background-size: cover;
 }
+
 .bg-opacity{
     background-color: var(--btn-color-primary);
+    padding-top:5rem;
+    padding-bottom:2rem;
     width: 100%;
-    height: 100%;
-    opacity: 0.5;
+    height: 1000px;
+    opacity: 0.4;
 }
 .about-content{
-    position: relative;
+    position: absolute;
     top: 0;
 }
 
@@ -150,21 +183,19 @@ padding: 0;
     -moz-border-radius: 0 ;
     border-radius: 0 ;
     border: none;
+    font-weight: 300;
+    padding: 0.8rem 1em;
 }
-
 .btn-holder{
-    padding: 0rem 0 3rem 0;
-}    
+    padding-bottom: 10rem;
+}  
 
-    .jumbotron-fluid .btn:nth-of-type(1){
-        background-color:var(--btn-color-primary);
-        width: 150px;
-        
-    }
-    .jumbotron-fluid .btn:nth-of-type(2){
-        background-color:var(--btn-color-secondary);
-        width: 130px;
-    }
+.btn-blue{
+    background-color:var(--btn-color-primary);
+}
+.btn-pink{
+    background-color:var(--btn-color-secondary)
+}
 
 
 
